@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "vazir ";
+    src: url("../fonts/Vazir.ttf");
+}
+[s1]{border: 1px dashed red}
+[s2]{border: 1px dashed green}
+[s3]{border: 1px dashed blue}
+
+.header{
+    background-color: rgba(27, 24, 24, 0.72);
+    position: relative;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding: 0 20px;
+}
+.msg{
+    padding-right: 2em;
+}
+body{
+    height: 100%;
+    overflow-x: hidden;
+    background-color:#E0E0E0;
+}
+.headLogo{
+    display:block;
+    margin: auto;
+    overflow: hidden;
+}
+.imgLogo{
+    height: 55px;
+    top: 4px;
+    position: relative;
+    margin: auto;
+    padding: 2px;
+    display: inline-block;
+
+}
+.registerCol{
+    font-family: "vazir ";
+    display: block;
+    margin: auto;
+    margin-top:13em;
+
+}
+.numberRow{
+    padding-top: 1.5em;
+    float: left;
+}
+.pos{
+    position: relative;
+}
+.numberBorder{
+    float: left;
+    position: absolute;
+    width: 85%;
+    right: 0;
+    color:#88B04B;
+    padding-bottom: 4px;
+    padding-right: 2px;
+    border-bottom: 2px solid #88B04B;
+}
+
+.group        {
+    position:relative;
+    margin-bottom:45px;
+}
+input         {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    position: relative;
+    display:block;
+    width: 300px;
+    border:none;
+    background-color: transparent;
+    border-bottom:1px solid #b5b5b5;
+}
+input:focus     { outline:none; }
+
+
+
+
+label          {
+    color:#999;
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    right:2em;
+    top:10px;
+    transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label     {
+    top:-20px;
+    font-size:14px;
+    color:#88B04B;
+}
+
+
+
+
+.bar  { position:relative; display:block; }
+.bar:before, .bar:after   {
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:#88B04B;
+    transition:0.2s ease all;
+}
+.bar:before {
+    left:50%;
+}
+.bar:after {
+    right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+
+
+.highlight {
+    position:absolute;
+    height:60%;
+    width:100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@keyframes inputHighlighter {
+    from  { background:#88B04B}
+    to    { width:0; background:transparent; }
+}
+.btn{
+    width: 90%;
+    color: white;
+    background-color: #88B04B;
+    border-color: #7ba349;
+    box-shadow: 0 1px 7px 1px #9e9e9e;
+}
+.btn:hover{
+    background-color: #a7d154;
+    border-color: #a0c84d;
+    color: white;
+    box-shadow: 0 1px 7px 1px #9e9e9e;
+}

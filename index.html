@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <link href="asset/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="asset/lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+
+</head>
+<body class="ov">
+<div class="row">
+    <div class="col-12">
+
+        <div class="row">
+            <div class="col-12 header  float-left  ">
+                <div class="row">
+                    <div class=" col-md-4 col-sm-6 headLogo ">
+                        <img class="imgLogo" src="asset/img/logo.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-12 registerCol text-center">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h5>شماره تلفن همراه خود را وارد کنید </h5>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12 numberRow">
+                        <div   class="col-1 float-left pt-4"><span>+98</span></div>
+                        <div  class="col-10 float-left ">
+
+
+                                    <div  class="group col-12">
+                                        <input  class="col-12" type="text" required>
+                                        <label   class="text-right ">همراه</label>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+
+                                    </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12 d-inline "style="width: 100%">
+                        <form class="col-12 ">
+                            <button type="submit" class="btn btn-default d-block mx-auto text-center ">دریافت کد فعال سازی</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+
+        $('input').blur(function() {
+
+            // check if the input has any value (if we've typed into it)
+            if ($(this).val())
+                $(this).addClass('used');
+            else
+                $(this).removeClass('used');
+        });
+
+    });
+</script>
+</body>
+</html>
